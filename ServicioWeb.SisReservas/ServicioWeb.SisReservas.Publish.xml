@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://localhost/SisReservasCore" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="04/05/2015 00:58:42" />
+    <file relUrl="bin/DominioEntidades.SisReservas.pdb" publishTime="04/05/2015 00:49:02" />
+    <file relUrl="bin/Microsoft.Practices.ServiceLocation.dll" publishTime="02/03/2015 14:39:56" />
+    <file relUrl="ServicioGestion.svc" publishTime="03/12/2015 17:14:34" />
+    <file relUrl="bin/DominioServicios.SisReservas.dll" publishTime="04/05/2015 00:49:14" />
+    <file relUrl="bin/PersistenciaRepositorio.SisReservas.dll" publishTime="04/05/2015 00:49:27" />
+    <file relUrl="ServicioListados.svc" publishTime="03/12/2015 17:14:08" />
+    <file relUrl="ServicioReportes.svc" publishTime="03/12/2015 17:13:38" />
+    <file relUrl="bin/ServicioWeb.SisReservas.dll" publishTime="04/05/2015 00:49:32" />
+    <file relUrl="bin/AplicacionServicio.SisReservas.pdb" publishTime="04/05/2015 00:49:25" />
+    <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="02/03/2015 14:39:56" />
+    <file relUrl="bin/PersistenciaModelo.SisReservas.pdb" publishTime="04/05/2015 00:49:20" />
+    <file relUrl="bin/DominioContratos.SisReservas.dll" publishTime="04/05/2015 00:49:16" />
+    <file relUrl="bin/PersistenciaModelo.SisReservas.dll" publishTime="04/05/2015 00:49:20" />
+    <file relUrl="bin/PersistenciaRepositorio.SisReservas.pdb" publishTime="04/05/2015 00:49:27" />
+    <file relUrl="bin/PersistenciaUnity.SisReservas.pdb" publishTime="04/05/2015 00:49:29" />
+    <file relUrl="bin/ServicioWeb.SisReservas.pdb" publishTime="04/05/2015 00:49:31" />
+    <file relUrl="ServicioConsultas.svc" publishTime="03/12/2015 17:14:56" />
+    <file relUrl="bin/DominioContratos.SisReservas.pdb" publishTime="04/05/2015 00:49:16" />
+    <file relUrl="bin/AplicacionServicio.SisReservas.dll" publishTime="04/05/2015 00:49:25" />
+    <file relUrl="bin/PersistenciaUnity.SisReservas.dll" publishTime="04/05/2015 00:49:29" />
+    <file relUrl="bin/DominioEntidades.SisReservas.dll" publishTime="04/05/2015 00:49:05" />
+    <file relUrl="bin/PersistenciaNucleo.SisReservas.dll" publishTime="04/05/2015 00:49:17" />
+    <file relUrl="bin/PersistenciaNucleo.SisReservas.pdb" publishTime="04/05/2015 00:49:17" />
+    <file relUrl="bin/DominioServicios.SisReservas.pdb" publishTime="04/05/2015 00:49:14" />
+  </publishProfile>
+</publishData>

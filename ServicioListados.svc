@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ServicioWeb.SisReservas.ServicioListados" CodeBehind="ServicioListados.svc.cs" %>

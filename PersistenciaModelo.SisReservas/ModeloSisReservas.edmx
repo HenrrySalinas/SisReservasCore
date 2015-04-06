@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModeloSisReservas.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModeloSisReservasStoreContainer" />
+        <Function Name="PGET_GESTION_P_REGISTRAR_GENERO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" StoreFunctionName="PGET_GESTION.P_REGISTRAR_GENERO" Schema="APP_GESTION_UAB">
+          <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+          <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+          <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+          <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+        </Function>
+        <Function Name="PGET_GESTION_P_REGISTRAR_PERSONA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" StoreFunctionName="PGET_GESTION.P_REGISTRAR_PERSONA" Schema="APP_GESTION_UAB">
+          <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+          <Parameter Name="I_ID_TIPO_PERSONA" Type="number" Mode="In" />
+          <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+          <Parameter Name="I_NOMBRE" Type="varchar2" Mode="In" />
+          <Parameter Name="I_AP_PATERNO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_AP_MATERNO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_FECHA_NACIMIENTO" Type="date" Mode="In" />
+          <Parameter Name="I_DIRECCION" Type="varchar2" Mode="In" />
+          <Parameter Name="I_EMAIL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+          <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+          <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+        </Function>
+        <Function Name="PGET_GESTION_P_REGISTRA_DOCUMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" StoreFunctionName="PGET_GESTION.P_REGISTRA_DOCUMENTO" Schema="APP_GESTION_UAB">
+          <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_ID_DOCUMENTO" Type="number" Mode="In" />
+          <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+          <Parameter Name="I_ID_TIPO_DOCUMENTO" Type="number" Mode="In" />
+          <Parameter Name="I_NUMERO_DOCUMENTO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+          <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+          <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+        </Function>
+        <Function Name="PGET_LISTADOS_P_LISTAR_DOCUMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" StoreFunctionName="PGET_LISTADOS.P_LISTAR_DOCUMENTO" Schema="APP_GESTION_UAB">
+          <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_ID_DOCUMENTO" Type="number" Mode="In" />
+          <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+          <Parameter Name="I_ID_TIPO_DOCUMENTO" Type="number" Mode="In" />
+          <Parameter Name="I_TIPO_DOCUMENTO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_NUMERO_DOCUMENTO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+          <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+          <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+        </Function>
+        <Function Name="PGET_LISTADOS_P_LISTAR_GENERO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" StoreFunctionName="PGET_LISTADOS.P_LISTAR_GENERO" Schema="APP_GESTION_UAB">
+          <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+          <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+          <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+          <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+        </Function>
+        <Function Name="PGET_LISTADOS_P_LISTAR_PERSONA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" StoreFunctionName="PGET_LISTADOS.P_LISTAR_PERSONA" Schema="APP_GESTION_UAB">
+          <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+          <Parameter Name="I_ID_TIPO_PERSONA" Type="number" Mode="In" />
+          <Parameter Name="I_TIPO_PERSONA" Type="varchar2" Mode="In" />
+          <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+          <Parameter Name="I_GENERO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_NOMBRE" Type="varchar2" Mode="In" />
+          <Parameter Name="I_AP_PATERNO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_AP_MATERNO" Type="varchar2" Mode="In" />
+          <Parameter Name="I_FECHA_NACIMIENTO" Type="date" Mode="In" />
+          <Parameter Name="I_DIRECCION" Type="varchar2" Mode="In" />
+          <Parameter Name="I_EMAIL" Type="varchar2" Mode="In" />
+          <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+          <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+          <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModeloSisReservas" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="EntidadesSisReservas" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="PGET_LISTADOS_P_LISTAR_GENERO" ReturnType="Collection(ModeloSisReservas.O_LISTAR_GENERO)">
+            <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+            <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+            <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="PGET_LISTADOS_P_LISTAR_PERSONA" ReturnType="Collection(ModeloSisReservas.O_LISTAR_PERSONA)">
+            <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+            <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+            <Parameter Name="I_ID_TIPO_PERSONA" Mode="In" Type="Decimal" />
+            <Parameter Name="I_TIPO_PERSONA" Mode="In" Type="String" />
+            <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_GENERO" Mode="In" Type="String" />
+            <Parameter Name="I_NOMBRE" Mode="In" Type="String" />
+            <Parameter Name="I_AP_PATERNO" Mode="In" Type="String" />
+            <Parameter Name="I_AP_MATERNO" Mode="In" Type="String" />
+            <Parameter Name="I_FECHA_NACIMIENTO" Mode="In" Type="DateTime" />
+            <Parameter Name="I_DIRECCION" Mode="In" Type="String" />
+            <Parameter Name="I_EMAIL" Mode="In" Type="String" />
+            <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="PGET_LISTADOS_P_LISTAR_DOCUMENTO" ReturnType="Collection(ModeloSisReservas.O_LISTAR_DOCUMENTO)">
+            <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+            <Parameter Name="I_ID_DOCUMENTO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+            <Parameter Name="I_ID_TIPO_DOCUMENTO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_TIPO_DOCUMENTO" Mode="In" Type="String" />
+            <Parameter Name="I_NUMERO_DOCUMENTO" Mode="In" Type="String" />
+            <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+            <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="PGET_GESTION_P_REGISTRAR_PERSONA" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+            <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+            <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+            <Parameter Name="I_ID_TIPO_PERSONA" Mode="In" Type="Decimal" />
+            <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_NOMBRE" Mode="In" Type="String" />
+            <Parameter Name="I_AP_PATERNO" Mode="In" Type="String" />
+            <Parameter Name="I_AP_MATERNO" Mode="In" Type="String" />
+            <Parameter Name="I_FECHA_NACIMIENTO" Mode="In" Type="DateTime" />
+            <Parameter Name="I_DIRECCION" Mode="In" Type="String" />
+            <Parameter Name="I_EMAIL" Mode="In" Type="String" />
+            <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="PGET_GESTION_P_REGISTRAR_GENERO" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+            <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+            <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+            <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="PGET_GESTION_P_REGISTRA_DOCUMENTO" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+            <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+            <Parameter Name="I_ID_DOCUMENTO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+            <Parameter Name="I_ID_TIPO_DOCUMENTO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_NUMERO_DOCUMENTO" Mode="In" Type="String" />
+            <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+            <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+            <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="O_RESULTADO" >
+          <Property Type="Decimal" Name="ID_TABLA" Nullable="true" />
+          <Property Type="String" Name="MENSAJE_ERROR" Nullable="true" />
+          <Property Type="Decimal" Name="RESULTADO" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="O_LISTAR_GENERO" >
+          <Property Type="Decimal" Name="ID_GENERO" Nullable="true" />
+          <Property Type="String" Name="DESCRIPCION" Nullable="true" />
+          <Property Type="Decimal" Name="APP_ID_USUARIO" Nullable="true" />
+          <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+          <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="O_LISTAR_PERSONA" >
+          <Property Type="Decimal" Name="ID_PERSONA" Nullable="true" />
+          <Property Type="Decimal" Name="ID_TIPO_PERSONA" Nullable="true" />
+          <Property Type="String" Name="TIPO_PERSONA" Nullable="true" />
+          <Property Type="Decimal" Name="ID_GENERO" Nullable="true" />
+          <Property Type="String" Name="GENERO" Nullable="true" />
+          <Property Type="String" Name="NOMBRE" Nullable="true" />
+          <Property Type="String" Name="AP_PATERNO" Nullable="true" />
+          <Property Type="String" Name="AP_MATERNO" Nullable="true" />
+          <Property Type="DateTime" Name="FECHA_NACIMIENTO" Nullable="true" />
+          <Property Type="String" Name="DIRECCION" Nullable="true" />
+          <Property Type="String" Name="EMAIL" Nullable="true" />
+          <Property Type="Decimal" Name="APP_ID_USUARIO" Nullable="true" />
+          <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+          <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="O_LISTAR_DOCUMENTO" >
+          <Property Type="Decimal" Name="ID_DOCUMENTO" Nullable="true" />
+          <Property Type="Decimal" Name="ID_PERSONA" Nullable="true" />
+          <Property Type="Decimal" Name="ID_TIPO_DOCUMENTO" Nullable="true" />
+          <Property Type="String" Name="TIPO_DOCUMENTO" Nullable="true" />
+          <Property Type="String" Name="NUMERO_DOCUMENTO" Nullable="true" />
+          <Property Type="String" Name="DESCRIPCION" Nullable="true" />
+          <Property Type="Decimal" Name="APP_ID_USUARIO" Nullable="true" />
+          <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+          <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="ModeloSisReservas" />
+        <Alias Key="Target" Value="ModeloSisReservas.Store" />
+        <EntityContainerMapping CdmEntityContainer="EntidadesSisReservas" StorageEntityContainer="ModeloSisReservasStoreContainer">
+          <FunctionImportMapping FunctionImportName="PGET_LISTADOS_P_LISTAR_GENERO" FunctionName="ModeloSisReservas.Store.PGET_LISTADOS_P_LISTAR_GENERO">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModeloSisReservas.O_LISTAR_GENERO">
+                <ScalarProperty Name="ID_GENERO" ColumnName="ID_GENERO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="APP_ID_USUARIO" ColumnName="APP_ID_USUARIO" />
+                <ScalarProperty Name="AUD_ESTADO" ColumnName="AUD_ESTADO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PGET_LISTADOS_P_LISTAR_PERSONA" FunctionName="ModeloSisReservas.Store.PGET_LISTADOS_P_LISTAR_PERSONA">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModeloSisReservas.O_LISTAR_PERSONA">
+                <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+                <ScalarProperty Name="ID_TIPO_PERSONA" ColumnName="ID_TIPO_PERSONA" />
+                <ScalarProperty Name="TIPO_PERSONA" ColumnName="TIPO_PERSONA" />
+                <ScalarProperty Name="ID_GENERO" ColumnName="ID_GENERO" />
+                <ScalarProperty Name="GENERO" ColumnName="GENERO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="AP_PATERNO" ColumnName="AP_PATERNO" />
+                <ScalarProperty Name="AP_MATERNO" ColumnName="AP_MATERNO" />
+                <ScalarProperty Name="FECHA_NACIMIENTO" ColumnName="FECHA_NACIMIENTO" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="APP_ID_USUARIO" ColumnName="APP_ID_USUARIO" />
+                <ScalarProperty Name="AUD_ESTADO" ColumnName="AUD_ESTADO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PGET_LISTADOS_P_LISTAR_DOCUMENTO" FunctionName="ModeloSisReservas.Store.PGET_LISTADOS_P_LISTAR_DOCUMENTO">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModeloSisReservas.O_LISTAR_DOCUMENTO">
+                <ScalarProperty Name="ID_DOCUMENTO" ColumnName="ID_DOCUMENTO" />
+                <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+                <ScalarProperty Name="ID_TIPO_DOCUMENTO" ColumnName="ID_TIPO_DOCUMENTO" />
+                <ScalarProperty Name="TIPO_DOCUMENTO" ColumnName="TIPO_DOCUMENTO" />
+                <ScalarProperty Name="NUMERO_DOCUMENTO" ColumnName="NUMERO_DOCUMENTO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="APP_ID_USUARIO" ColumnName="APP_ID_USUARIO" />
+                <ScalarProperty Name="AUD_ESTADO" ColumnName="AUD_ESTADO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PGET_GESTION_P_REGISTRAR_PERSONA" FunctionName="ModeloSisReservas.Store.PGET_GESTION_P_REGISTRAR_PERSONA">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModeloSisReservas.O_RESULTADO">
+                <ScalarProperty Name="ID_TABLA" ColumnName="ID_TABLA" />
+                <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
+                <ScalarProperty Name="RESULTADO" ColumnName="RESULTADO" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PGET_GESTION_P_REGISTRAR_GENERO" FunctionName="ModeloSisReservas.Store.PGET_GESTION_P_REGISTRAR_GENERO">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModeloSisReservas.O_RESULTADO">
+                <ScalarProperty Name="ID_TABLA" ColumnName="ID_TABLA" />
+                <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
+                <ScalarProperty Name="RESULTADO" ColumnName="RESULTADO" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PGET_GESTION_P_REGISTRA_DOCUMENTO" FunctionName="ModeloSisReservas.Store.PGET_GESTION_P_REGISTRA_DOCUMENTO">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModeloSisReservas.O_RESULTADO">
+                <ScalarProperty Name="ID_TABLA" ColumnName="ID_TABLA" />
+                <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
+                <ScalarProperty Name="RESULTADO" ColumnName="RESULTADO" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="DatabaseGenerationWorkflow" Value="$(VSEFTools)\DBGen\Generate Oracle Via T4 (TPT).xaml" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="ModeloSisReservas" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="ModeloSisReservas" />
+  <Alias Key="Target" Value="ModeloSisReservas.Store" />
+  <EntityContainerMapping CdmEntityContainer="EntidadesSisReservas" StorageEntityContainer="ModeloSisReservasStoreContainer">
+    <FunctionImportMapping FunctionImportName="PGET_LISTADOS_P_LISTAR_GENERO" FunctionName="ModeloSisReservas.Store.PGET_LISTADOS_P_LISTAR_GENERO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModeloSisReservas.O_LISTAR_GENERO">
+          <ScalarProperty Name="ID_GENERO" ColumnName="ID_GENERO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="APP_ID_USUARIO" ColumnName="APP_ID_USUARIO" />
+          <ScalarProperty Name="AUD_ESTADO" ColumnName="AUD_ESTADO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PGET_LISTADOS_P_LISTAR_PERSONA" FunctionName="ModeloSisReservas.Store.PGET_LISTADOS_P_LISTAR_PERSONA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModeloSisReservas.O_LISTAR_PERSONA">
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_TIPO_PERSONA" ColumnName="ID_TIPO_PERSONA" />
+          <ScalarProperty Name="TIPO_PERSONA" ColumnName="TIPO_PERSONA" />
+          <ScalarProperty Name="ID_GENERO" ColumnName="ID_GENERO" />
+          <ScalarProperty Name="GENERO" ColumnName="GENERO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="AP_PATERNO" ColumnName="AP_PATERNO" />
+          <ScalarProperty Name="AP_MATERNO" ColumnName="AP_MATERNO" />
+          <ScalarProperty Name="FECHA_NACIMIENTO" ColumnName="FECHA_NACIMIENTO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="APP_ID_USUARIO" ColumnName="APP_ID_USUARIO" />
+          <ScalarProperty Name="AUD_ESTADO" ColumnName="AUD_ESTADO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PGET_LISTADOS_P_LISTAR_DOCUMENTO" FunctionName="ModeloSisReservas.Store.PGET_LISTADOS_P_LISTAR_DOCUMENTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModeloSisReservas.O_LISTAR_DOCUMENTO">
+          <ScalarProperty Name="ID_DOCUMENTO" ColumnName="ID_DOCUMENTO" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_TIPO_DOCUMENTO" ColumnName="ID_TIPO_DOCUMENTO" />
+          <ScalarProperty Name="TIPO_DOCUMENTO" ColumnName="TIPO_DOCUMENTO" />
+          <ScalarProperty Name="NUMERO_DOCUMENTO" ColumnName="NUMERO_DOCUMENTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="APP_ID_USUARIO" ColumnName="APP_ID_USUARIO" />
+          <ScalarProperty Name="AUD_ESTADO" ColumnName="AUD_ESTADO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PGET_GESTION_P_REGISTRAR_PERSONA" FunctionName="ModeloSisReservas.Store.PGET_GESTION_P_REGISTRAR_PERSONA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModeloSisReservas.O_RESULTADO">
+          <ScalarProperty Name="ID_TABLA" ColumnName="ID_TABLA" />
+          <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
+          <ScalarProperty Name="RESULTADO" ColumnName="RESULTADO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PGET_GESTION_P_REGISTRAR_GENERO" FunctionName="ModeloSisReservas.Store.PGET_GESTION_P_REGISTRAR_GENERO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModeloSisReservas.O_RESULTADO">
+          <ScalarProperty Name="ID_TABLA" ColumnName="ID_TABLA" />
+          <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
+          <ScalarProperty Name="RESULTADO" ColumnName="RESULTADO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PGET_GESTION_P_REGISTRA_DOCUMENTO" FunctionName="ModeloSisReservas.Store.PGET_GESTION_P_REGISTRA_DOCUMENTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModeloSisReservas.O_RESULTADO">
+          <ScalarProperty Name="ID_TABLA" ColumnName="ID_TABLA" />
+          <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
+          <ScalarProperty Name="RESULTADO" ColumnName="RESULTADO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
