@@ -1,0 +1,7 @@
+C:\inetpub\wwwroot\SisReservasCore\DominioServicios.SisReservas\bin\Release\DominioServicios.SisReservas.dll
+C:\inetpub\wwwroot\SisReservasCore\DominioServicios.SisReservas\bin\Release\DominioServicios.SisReservas.pdb
+C:\inetpub\wwwroot\SisReservasCore\DominioServicios.SisReservas\bin\Release\DominioEntidades.SisReservas.dll
+C:\inetpub\wwwroot\SisReservasCore\DominioServicios.SisReservas\bin\Release\DominioEntidades.SisReservas.pdb
+C:\inetpub\wwwroot\SisReservasCore\DominioServicios.SisReservas\obj\x86\Release\DominioServicios.SisReservas.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\SisReservasCore\DominioServicios.SisReservas\obj\x86\Release\DominioServicios.SisReservas.dll
+C:\inetpub\wwwroot\SisReservasCore\DominioServicios.SisReservas\obj\x86\Release\DominioServicios.SisReservas.pdb

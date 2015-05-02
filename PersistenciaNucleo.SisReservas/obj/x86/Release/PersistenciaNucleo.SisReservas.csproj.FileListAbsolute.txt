@@ -1,0 +1,9 @@
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\bin\Release\PersistenciaNucleo.SisReservas.dll
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\bin\Release\PersistenciaNucleo.SisReservas.pdb
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\bin\Release\DominioContratos.SisReservas.dll
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\bin\Release\DominioEntidades.SisReservas.dll
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\bin\Release\DominioContratos.SisReservas.pdb
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\bin\Release\DominioEntidades.SisReservas.pdb
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\obj\x86\Release\PersistenciaNucleo.SisReservas.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\obj\x86\Release\PersistenciaNucleo.SisReservas.dll
+C:\inetpub\wwwroot\SisReservasCore\PersistenciaNucleo.SisReservas\obj\x86\Release\PersistenciaNucleo.SisReservas.pdb

@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModeloSisReservas" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="EntidadesSisReservas" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <FunctionImport Name="PGET_LISTADOS_P_LISTAR_GENERO" ReturnType="Collection(ModeloSisReservas.O_LISTAR_GENERO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRA_DOCUMENTO" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_DOCUMENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_TIPO_DOCUMENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_NUMERO_DOCUMENTO" Mode="In" Type="String" />
+      <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRAR_GENERO" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRAR_PERSONA" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_TIPO_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="I_AP_PATERNO" Mode="In" Type="String" />
+      <Parameter Name="I_AP_MATERNO" Mode="In" Type="String" />
+      <Parameter Name="I_FECHA_NACIMIENTO" Mode="In" Type="DateTime" />
+      <Parameter Name="I_DIRECCION" Mode="In" Type="String" />
+      <Parameter Name="I_EMAIL" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_LISTADOS_P_LISTAR_DOCUMENTO" ReturnType="Collection(ModeloSisReservas.O_LISTAR_DOCUMENTO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_DOCUMENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_TIPO_DOCUMENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_TIPO_DOCUMENTO" Mode="In" Type="String" />
+      <Parameter Name="I_NUMERO_DOCUMENTO" Mode="In" Type="String" />
+      <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_LISTADOS_P_LISTAR_PERSONA" ReturnType="Collection(ModeloSisReservas.O_LISTAR_PERSONA)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_TIPO_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_TIPO_PERSONA" Mode="In" Type="String" />
+      <Parameter Name="I_ID_GENERO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_GENERO" Mode="In" Type="String" />
+      <Parameter Name="I_NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="I_AP_PATERNO" Mode="In" Type="String" />
+      <Parameter Name="I_AP_MATERNO" Mode="In" Type="String" />
+      <Parameter Name="I_FECHA_NACIMIENTO" Mode="In" Type="DateTime" />
+      <Parameter Name="I_DIRECCION" Mode="In" Type="String" />
+      <Parameter Name="I_EMAIL" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_LISTADOS_P_LISTAR_BOLETO_COMPLETO" ReturnType="Collection(ModeloSisReservas.O_LISTAR_BOLETO_COMPLETO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_BOLETO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_SUCURSAL" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_DETALLE_BOLETO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_TIPO_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_NUMERO" Mode="In" Type="String" />
+      <Parameter Name="I_TIPO_ASIENTO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_LISTADOS_P_LISTAR_ASIENTO_COMPLETO" ReturnType="Collection(ModeloSisReservas.O_LISTAR_ASIENTO_COMPLETO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_ASIENTO_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_ESTADO_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ASIENTO_RUTA" Mode="In" Type="String" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+      <Parameter Name="I_ID_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ESTADO_ASIENTO" Mode="In" Type="String" />
+      <Parameter Name="I_NUMERO" Mode="In" Type="String" />
+      <Parameter Name="I_TIPO_ASIENTO" Mode="In" Type="String" />
+      <Parameter Name="I_ID_TIPO_ASIENTO" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRAR_BOLETO" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_BOLETO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_SUCURSAL" Mode="In" Type="Decimal" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRAR_ASIENTO" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_TIPO_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_NUMERO" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRAR_DETALLE_BOLETO" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_DETALLE_BOLETO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_BOLETO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRAR_ASIENTO_RUTA" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_ASIENTO_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_ESTADO_ASIENTO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_GESTION_P_REGISTRAR_RUTA" ReturnType="Collection(ModeloSisReservas.O_RESULTADO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_CIUDAD_ORIGEN" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_CIUDAD_DESTINO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_FLOTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_HORARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_PRECIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_CONDUCTOR" Mode="In" Type="Decimal" />
+      <Parameter Name="I_APP_ID_USUARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_FECHA_REGISTRO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_LISTADOS_P_LISTAR_RUTA_COMPLETO" ReturnType="Collection(ModeloSisReservas.O_LISTAR_RUTA_COMPLETO)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_RUTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_CIUDAD_ORIGEN" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_CIUDAD_DESTINO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_FLOTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_HORARIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_PRECIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_ID_CONDUCTOR" Mode="In" Type="Decimal" />
+      <Parameter Name="I_PRECIO" Mode="In" Type="Decimal" />
+      <Parameter Name="I_HORA" Mode="In" Type="String" />
+      <Parameter Name="I_ID_TIPO_FLOTA" Mode="In" Type="Decimal" />
+      <Parameter Name="I_PLACA" Mode="In" Type="String" />
+      <Parameter Name="I_MODELO" Mode="In" Type="String" />
+      <Parameter Name="I_NRO_ASIENTOS" Mode="In" Type="Decimal" />
+      <Parameter Name="I_TIPO_FLOTA" Mode="In" Type="String" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="PGET_LISTADOS_P_LISTAR_CIUDAD" ReturnType="Collection(ModeloSisReservas.O_CIUDAD)">
+      <Parameter Name="I_CREDENCIAL" Mode="In" Type="String" />
+      <Parameter Name="I_ID_CIUDAD" Mode="In" Type="Decimal" />
+      <Parameter Name="I_CIUDAD" Mode="In" Type="String" />
+      <Parameter Name="I_AUD_ESTADO" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="O_RESULTADO">
+    <Property Type="Decimal" Name="ID_TABLA" Nullable="true" />
+    <Property Type="String" Name="MENSAJE_ERROR" Nullable="true" />
+    <Property Type="Decimal" Name="RESULTADO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_LISTAR_GENERO">
+    <Property Type="Decimal" Name="ID_GENERO" Nullable="true" />
+    <Property Type="String" Name="DESCRIPCION" Nullable="true" />
+    <Property Type="Decimal" Name="APP_ID_USUARIO" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+    <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_LISTAR_PERSONA">
+    <Property Type="Decimal" Name="ID_PERSONA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_TIPO_PERSONA" Nullable="true" />
+    <Property Type="String" Name="TIPO_PERSONA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_GENERO" Nullable="true" />
+    <Property Type="String" Name="GENERO" Nullable="true" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" />
+    <Property Type="String" Name="AP_PATERNO" Nullable="true" />
+    <Property Type="String" Name="AP_MATERNO" Nullable="true" />
+    <Property Type="DateTime" Name="FECHA_NACIMIENTO" Nullable="true" />
+    <Property Type="String" Name="DIRECCION" Nullable="true" />
+    <Property Type="String" Name="EMAIL" Nullable="true" />
+    <Property Type="Decimal" Name="APP_ID_USUARIO" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+    <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_LISTAR_DOCUMENTO">
+    <Property Type="Decimal" Name="ID_DOCUMENTO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_PERSONA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_TIPO_DOCUMENTO" Nullable="true" />
+    <Property Type="String" Name="TIPO_DOCUMENTO" Nullable="true" />
+    <Property Type="String" Name="NUMERO_DOCUMENTO" Nullable="true" />
+    <Property Type="String" Name="DESCRIPCION" Nullable="true" />
+    <Property Type="Decimal" Name="APP_ID_USUARIO" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+    <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_LISTAR_BOLETO_COMPLETO">
+    <Property Type="Decimal" Name="ID_BOLETO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_USUARIO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_SUCURSAL" Nullable="true" />
+    <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_DETALLE_BOLETO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_ASIENTO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_PERSONA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_TIPO_ASIENTO" Nullable="true" />
+    <Property Type="String" Name="NUMERO" Nullable="true" />
+    <Property Type="String" Name="TIPO_ASIENTO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_LISTAR_ASIENTO_COMPLETO">
+    <Property Type="Decimal" Name="ID_ASIENTO_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_ESTADO_ASIENTO" Nullable="true" />
+    <Property Type="String" Name="ASIENTO_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+    <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_ASIENTO" Nullable="true" />
+    <Property Type="String" Name="ESTADO_ASIENTO" Nullable="true" />
+    <Property Type="String" Name="NUMERO" Nullable="true" />
+    <Property Type="String" Name="TIPO_ASIENTO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_TIPO_ASIENTO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_BOLETO">
+    <Property Type="Decimal" Name="ID_BOLETO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_USUARIO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_SUCURSAL" Nullable="true" />
+    <Property Type="ModeloSisReservas.O_DATOS_AUD" Name="O_DATOS_AUD" Nullable="false" ConcurrencyMode="None" />
+  </ComplexType>
+  <ComplexType Name="O_ASIENTO">
+    <Property Type="Decimal" Name="ID_ASIENTO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_TIPO_ASIENTO" Nullable="true" />
+    <Property Type="String" Name="NUMERO" Nullable="true" />
+    <Property Type="ModeloSisReservas.O_DATOS_AUD" Name="O_DATOS_AUD" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="O_DETALLE_BOLETO">
+    <Property Type="Decimal" Name="ID_DETALLE_BOLETO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_BOLETO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_ASIENTO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_PERSONA" Nullable="true" />
+    <Property Type="ModeloSisReservas.O_DATOS_AUD" Name="O_DATOS_AUD" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="O_DATOS_AUD">
+    <Property Type="Decimal" Name="APP_ID_USUARIO" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+    <Property Type="DateTime" Name="FECHA_REGISTRO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_ASIENTO_RUTA">
+    <Property Type="Decimal" Name="ID_ASIENTO_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_ASIENTO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_ESTADO_ASIENTO" Nullable="true" />
+    <Property Type="String" Name="DESCRIPCION" Nullable="true" />
+    <Property Type="ModeloSisReservas.O_DATOS_AUD" Name="O_DATOS_AUD" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="O_RUTA">
+    <Property Type="Decimal" Name="ID_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_CIUDAD_ORIGEN" Nullable="true" />
+    <Property Type="Decimal" Name="ID_CIUDAD_DESTINO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_FLOTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_HORARIO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_PRECIO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_CONDUCTOR" Nullable="true" />
+    <Property Type="ModeloSisReservas.O_DATOS_AUD" Name="O_DATOS_AUD" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="O_LISTAR_RUTA_COMPLETO">
+    <Property Type="Decimal" Name="ID_RUTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_CIUDAD_ORIGEN" Nullable="true" />
+    <Property Type="Decimal" Name="ID_CIUDAD_DESTINO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_FLOTA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_HORARIO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_PRECIO" Nullable="true" />
+    <Property Type="Decimal" Name="ID_CONDUCTOR" Nullable="true" />
+    <Property Type="Decimal" Name="PRECIO" Nullable="true" />
+    <Property Type="String" Name="HORA" Nullable="true" />
+    <Property Type="Decimal" Name="ID_TIPO_FLOTA" Nullable="true" />
+    <Property Type="String" Name="PLACA" Nullable="true" />
+    <Property Type="String" Name="MODELO" Nullable="true" />
+    <Property Type="Decimal" Name="NRO_ASIENTOS" Nullable="true" />
+    <Property Type="String" Name="TIPO_FLOTA" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="O_CIUDAD">
+    <Property Type="Decimal" Name="ID_CIUDAD" Nullable="true" />
+    <Property Type="String" Name="CIUDAD" Nullable="true" />
+    <Property Type="Decimal" Name="AUD_ESTADO" Nullable="true" />
+  </ComplexType>
+</Schema>

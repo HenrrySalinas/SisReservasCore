@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDF9294A-8617-4E14-A92D-F6609E65BA9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersistenciaUnity.SisReservas</RootNamespace>
+    <AssemblyName>PersistenciaUnity.SisReservas</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="PersistenciaModelo.SisReservas">
+      <HintPath>..\PersistenciaModelo.SisReservas\bin\Debug\PersistenciaModelo.SisReservas.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FabricaIoC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AplicacionServicio.SisReservas\AplicacionServicio.SisReservas.csproj">
+      <Project>{7968d59d-c6e9-4efe-ad45-6e99f09e9a5c}</Project>
+      <Name>AplicacionServicio.SisReservas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DominioContratos.SisReservas\DominioContratos.SisReservas.csproj">
+      <Project>{046adc46-9395-4457-8236-b2c264c48df0}</Project>
+      <Name>DominioContratos.SisReservas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DominioEntidades.SisReservas\DominioEntidades.SisReservas.csproj">
+      <Project>{72027b26-754d-4f9f-af5e-9e2d7270977b}</Project>
+      <Name>DominioEntidades.SisReservas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DominioServicios.SisReservas\DominioServicios.SisReservas.csproj">
+      <Project>{f0cb2e08-4f00-426b-bf75-579610cb5481}</Project>
+      <Name>DominioServicios.SisReservas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersistenciaNucleo.SisReservas\PersistenciaNucleo.SisReservas.csproj">
+      <Project>{238131d3-b543-4325-8bf3-f5a4634ac692}</Project>
+      <Name>PersistenciaNucleo.SisReservas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersistenciaRepositorio.SisReservas\PersistenciaRepositorio.SisReservas.csproj">
+      <Project>{48014846-ac96-49c6-8fe8-a234d776b293}</Project>
+      <Name>PersistenciaRepositorio.SisReservas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="Dll\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="Dll\Microsoft.Practices.Unity.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

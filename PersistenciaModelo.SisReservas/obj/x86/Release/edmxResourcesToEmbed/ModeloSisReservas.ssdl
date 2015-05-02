@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModeloSisReservas.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="PGET_GESTION_P_REGISTRAR_ASIENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRAR_ASIENTO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_TIPO_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_NUMERO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_GESTION_P_REGISTRAR_ASIENTO_RUTA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRAR_ASIENTO_RUTA">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_ASIENTO_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_ESTADO_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_GESTION_P_REGISTRAR_BOLETO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRAR_BOLETO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_BOLETO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_SUCURSAL" Type="number" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_GESTION_P_REGISTRAR_DETALLE_BOLETO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRAR_DETALLE_BOLETO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_DETALLE_BOLETO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_BOLETO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_GESTION_P_REGISTRAR_GENERO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRAR_GENERO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+    <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_GESTION_P_REGISTRAR_PERSONA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRAR_PERSONA">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_TIPO_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+    <Parameter Name="I_NOMBRE" Type="varchar2" Mode="In" />
+    <Parameter Name="I_AP_PATERNO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_AP_MATERNO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_FECHA_NACIMIENTO" Type="date" Mode="In" />
+    <Parameter Name="I_DIRECCION" Type="varchar2" Mode="In" />
+    <Parameter Name="I_EMAIL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_GESTION_P_REGISTRAR_RUTA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRAR_RUTA">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_CIUDAD_ORIGEN" Type="number" Mode="In" />
+    <Parameter Name="I_ID_CIUDAD_DESTINO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_FLOTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_HORARIO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_PRECIO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_CONDUCTOR" Type="number" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_GESTION_P_REGISTRA_DOCUMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_GESTION.P_REGISTRA_DOCUMENTO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_DOCUMENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_TIPO_DOCUMENTO" Type="number" Mode="In" />
+    <Parameter Name="I_NUMERO_DOCUMENTO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_LISTADOS_P_LISTAR_ASIENTO_COMPLETO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_LISTADOS.P_LISTAR_ASIENTO_COMPLETO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_ASIENTO_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_ESTADO_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ASIENTO_RUTA" Type="varchar2" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+    <Parameter Name="I_ID_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ESTADO_ASIENTO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_NUMERO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_TIPO_ASIENTO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_TIPO_ASIENTO" Type="number" Mode="In" />
+  </Function>
+  <Function Name="PGET_LISTADOS_P_LISTAR_BOLETO_COMPLETO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_LISTADOS.P_LISTAR_BOLETO_COMPLETO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_BOLETO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_SUCURSAL" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_DETALLE_BOLETO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_TIPO_ASIENTO" Type="number" Mode="In" />
+    <Parameter Name="I_NUMERO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_TIPO_ASIENTO" Type="varchar2" Mode="In" />
+  </Function>
+  <Function Name="PGET_LISTADOS_P_LISTAR_CIUDAD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_LISTADOS.P_LISTAR_CIUDAD">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_CIUDAD" Type="number" Mode="In" />
+    <Parameter Name="I_CIUDAD" Type="varchar2" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+  </Function>
+  <Function Name="PGET_LISTADOS_P_LISTAR_DOCUMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_LISTADOS.P_LISTAR_DOCUMENTO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_DOCUMENTO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_TIPO_DOCUMENTO" Type="number" Mode="In" />
+    <Parameter Name="I_TIPO_DOCUMENTO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_NUMERO_DOCUMENTO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_LISTADOS_P_LISTAR_GENERO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_LISTADOS.P_LISTAR_GENERO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+    <Parameter Name="I_DESCRIPCION" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_LISTADOS_P_LISTAR_PERSONA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_LISTADOS.P_LISTAR_PERSONA">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_TIPO_PERSONA" Type="number" Mode="In" />
+    <Parameter Name="I_TIPO_PERSONA" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_GENERO" Type="number" Mode="In" />
+    <Parameter Name="I_GENERO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_NOMBRE" Type="varchar2" Mode="In" />
+    <Parameter Name="I_AP_PATERNO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_AP_MATERNO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_FECHA_NACIMIENTO" Type="date" Mode="In" />
+    <Parameter Name="I_DIRECCION" Type="varchar2" Mode="In" />
+    <Parameter Name="I_EMAIL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_APP_ID_USUARIO" Type="number" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+    <Parameter Name="I_FECHA_REGISTRO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PGET_LISTADOS_P_LISTAR_RUTA_COMPLETO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="APP_GESTION_UAB" StoreFunctionName="PGET_LISTADOS.P_LISTAR_RUTA_COMPLETO">
+    <Parameter Name="I_CREDENCIAL" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_RUTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_CIUDAD_ORIGEN" Type="number" Mode="In" />
+    <Parameter Name="I_ID_CIUDAD_DESTINO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_FLOTA" Type="number" Mode="In" />
+    <Parameter Name="I_ID_HORARIO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_PRECIO" Type="number" Mode="In" />
+    <Parameter Name="I_ID_CONDUCTOR" Type="number" Mode="In" />
+    <Parameter Name="I_PRECIO" Type="number" Mode="In" />
+    <Parameter Name="I_HORA" Type="varchar2" Mode="In" />
+    <Parameter Name="I_ID_TIPO_FLOTA" Type="number" Mode="In" />
+    <Parameter Name="I_PLACA" Type="varchar2" Mode="In" />
+    <Parameter Name="I_MODELO" Type="varchar2" Mode="In" />
+    <Parameter Name="I_NRO_ASIENTOS" Type="number" Mode="In" />
+    <Parameter Name="I_TIPO_FLOTA" Type="varchar2" Mode="In" />
+    <Parameter Name="I_AUD_ESTADO" Type="number" Mode="In" />
+  </Function>
+  <EntityContainer Name="ModeloSisReservasStoreContainer" />
+</Schema>
